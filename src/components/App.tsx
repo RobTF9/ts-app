@@ -1,5 +1,5 @@
-import React from "react";
+import * as React from 'react';
 
-const App: React.FunctionComponent<{}> = () => <h1>Greetings</h1>;
+const App: React.FunctionComponent = () => <h1>Greetings</h1>;
 
 export default App;

@@ -1,0 +1,51 @@
+{
+  "env": {
+    "es2021": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "prettier/@typescript-eslint",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "project": "tsconfig.eslint.json"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "rules": {
+    "prefer-const": "error",
+    "react/jsx-filename-extension": [1, { "extensions": ["tsx"] }],
+    "prettier/prettier": "error",
+    "react/prop-types": "off",
+    "react/no-children-prop": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-explicit-any": "off"
+  },
+  "overrides": [
+    /**
+     * TESTS
+     */
+    {
+      "files": ["tests/**/*.{js,jsx,ts,tsx}"],
+      "extends": [],
+      "env": { "node": true, "jest": true }
+    }
+  ]
+}
