@@ -22,5 +22,11 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "prefer-const": "error"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["tests/**/*.{ts,tsx}"],
+      "env": { "jest": true, "node": true }
+    }
+  ]
 }
