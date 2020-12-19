@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "Rob Squires <robert.b.s@live.co.uk>",
   "license": "MIT",
+  "description": "Simple starter for building webapps with React and TypeScript",
   "scripts": {
     "build": "parcel build public/index.html",
     "start": "parcel public/index.html",
