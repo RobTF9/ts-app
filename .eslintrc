@@ -16,7 +16,8 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 12
+    "ecmaVersion": 12,
+    "project": "tsconfig.eslint.json"
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
